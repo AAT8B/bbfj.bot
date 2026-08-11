@@ -3,8 +3,8 @@ from pyrogram import *
 
 # 1. تعريف المتغيرات الأساسية فوراً
 to_config = "" 
-token = input("[+] TOKEN BOT :")
-owner_id = input("[+] OWNER ID :")
+token = input("[+] TOKEN BOT :"8063254835:AAHxabPeLMA4t4_R33MI8nP__8hfZR8g7uE")
+owner_id = input("[+] OWNER ID :"8526612004")
 Dev_Neptune = token.split(':')[0]
 
 
