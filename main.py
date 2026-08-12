@@ -2,10 +2,17 @@ import time, redis, os, json, re, requests, asyncio, sys
 from pyrogram import *
 
 # 1. تعريف المتغيرات الأساسية فوراً
-to_config = "" 
-token = input("[+] TOKEN BOT :'8063254835:AAHxabPeLMA4t4_R33MI8nP__8hfZR8g7uE')
-owner_id = input("[+] OWNER ID :'8526612004')
-Dev_Neptune = token.split(':')[0]
+to_config = ""
+token = os.getenv("8063254835:AAHxabPeLMA4t4_R33MI8nP__8hfZR8g7uE")
+owner_id = int(os.getenv("8526612004"))
+
+if not token:
+    raise RuntimeError("BOT_TOKEN is missing")
+
+if not owner_id:
+    raise RuntimeError("OWNER_ID is missing")
+
+Dev_Neptune = token.split(":")[0]
 
 
 # 2. محاولة الاتصال بـ Redis
