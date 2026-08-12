@@ -1,4 +1,4 @@
-import time, os, json, re, requests, asyncio, sys
+import os, json, re, requests, asyncio, sys
 from pyrogram import Client, idle
 
 # 1. تعريف المتغيرات الأساسية من Environment Variables
@@ -23,8 +23,7 @@ print('''
 ███▒▒▒▒▒▒▒ ''')
 
 # 3. تجهيز ملف الإعدادات config.py
-to_config = "import redis\n"
-to_config += f"token = '{token}'\n"
+to_config = f"token = '{token}'\n"
 to_config += f"Dev_Neptune = token.split(':')[0]\n"
 to_config += f"sudo_id = {owner_id}\n"
 
