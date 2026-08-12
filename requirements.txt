@@ -3,11 +3,8 @@ tgcrypto
 requests
 yt_dlp
 youtube_search
-redis
 pytz
-#googletrans==3.1.0a0
 hijri_converter
-#getids
 akinator
 pySmartDL
 pysocket
@@ -31,5 +28,4 @@ httpx[http2]>=0.18.1,<1.0.0
 aiohttp
 aiofiles
 python-arq
-uuid
 kvsqlite
